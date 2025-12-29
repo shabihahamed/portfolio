@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar container">
+
+		<button id="menu-toggle" onclick="toggleMenu()">☰</button>
+		
+        <h1 class="logo">Portfolio</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#comment">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+	<div class="container hero-wrapper">
+
+		<div class="hero-left">
+			<span class="hero-hello">HELLO!</span>
+
+			<h1 class="hero-name">
+				I'm <span>Shabih Ahamed</span>
+			</h1>
+
+			<h2 class="hero-role">Computer Science Student</h2>
+
+			<p class="hero-text">
+				Passionate about building innovative solutions using code and creating
+				meaningful digital experiences through modern web technologies.
+			</p>
+		</div>
+
+		<div class="hero-right">
+			<div class="hero-image">
+				<img src="assets/images/profile.jpg" alt="Profile Photo">
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section id="about">
+	<div class="about-wrapper">
+
+		<h2>About Me</h2>
+
+		<p class="about-text">
+			I am a dedicated Computer Science Student with a strong interest in software
+			development and web development. I enjoy working on challenging prolems that
+			strengthen my analytical thinking, creativity, and technical skills. I am
+			continuously improving my knowledge through academic tasks and personal projects.
+		</p>
+
+		<div class="about-cards">
+			<div class="about-card">
+				<h3>Education</h3>
+				<p>Bachelors in Computer Science with Artificial Intelligence (reading)</p>
+			</div>
+
+			<div class="about-card">
+				<h3>Focus Areas</h3>
+				<p>Web Development, Software Engineering, Problem Solving</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section id="skills">
+	<div class="container center-text">
+		<h2>Skills</h2>
+
+		<div class="skills-cards">
+
+			<div class="skill-card">
+				<h3>Programming</h3>
+				
+				<div class="skill-row">
+					<span>C++</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="85"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>Java</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="90"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>Java Spring Boot</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="70"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="skill-card">
+				<h3>Web Development</h3>
+				
+				<div class="skill-row">
+					<span>HTML</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="95"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>CSS</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="90"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>JavaScript</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="85"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>Tailwind CSS</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="70"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>React</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="75"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="skill-card">
+				<h3>Databases & Tools</h3>
+				
+				<div class="skill-row">
+					<span>MySQL</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="75"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>Git & GitHub</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="80"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>IntelliJ IDEA / VSCode</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="85"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>RESTful APIs</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="75"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>Networking Fundamentals</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="75"></div>
+					</div>
+				</div>
+
+				<div class="skill-row">
+					<span>GNU Prolog</span>
+					<div class="skill-bar">
+						<div class="skill-progress" data-level="75"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="projects">
+    <div class="container center-text">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Portfolio Website</h3>
+            
+				<p class="project-desc">
+					Responsive personal portfolio built using HTML, CSS, and JavaScript.
+				</p>
+
+				<div class="project-tools">
+					<span class="tool-pill">HTML</span>
+					<span class="tool-pill">CSS</span>
+					<span class="tool-pill">JavaScript</span>
+				</div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Team Communicator</h3>
+
+                <p class="project-desc">
+					LAN-based chat application built using Java and JavaSockets which can be
+					used in companies to communicate between team members working in the same
+					project which comes with a cool UI.
+				</p>
+
+				<div class="project-tools">
+					<span class="tool-pill">Java</span>
+				</div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">We Know Where</h3>
+                <p class="project-desc">
+					Web application which recommend the best land based on user preferences.
+					This web application uses AI logics to choose and filter land and has a 
+					user-friendly UI design.
+				</p>
+
+				<div class="project-tools">
+					<span class="tool-pill">Java Spring Boot</span>
+					<span class="tool-pill">GNU Prolog</span>
+					<span class="tool-pill">Tailwind CSS</span>
+					<span class="tool-pill">React</span>
+					<span class="tool-pill">JavaScript</span>
+					<span class="tool-pill">HTML</span>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="comment">
+    <div class="container comment-wrapper">
+
+        <h2>Contact Me</h2>
+
+        <p class="comment-subtext">
+            I would appreciate your feedback or suggestions to help improve this portfolio.
+        </p>
+
+        <form id="feedbackForm" class="comment-card">
+
+            <div class="form-group">
+                <span class="error" id="nameError"></span>
+                <input type="text" id="visitorName" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+                <span class="error" id="emailError"></span>
+                <input type="email" id="visitorEmail" placeholder="Your Email">
+            </div>
+
+            <div class="form-group">
+                <span class="error" id="commentError"></span>
+                <textarea id="suggestion" placeholder="Your Message"></textarea>
+            </div>
+
+            <button type="submit" class="comment-btn">Submit Message</button>
+
+        </form>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+	<div class="footer-links">
+		<a href="https://github.com/shabihahamed" target="_blank">GitHub</a>
+		<a href="https://x.com/shabihahamed" target="_blank">X</a>
+	</div>
+
+	<p class="footer-email">
+		<a href="mailto:shabihahamed@gmail.com">shabihahamed@gmail.com</a>
+	</p>
+
+	<p class="footer-copy">
+		&copy; 2025 Shabih Ahamed. All rights reserved.
+	</p>
+</footer>
+
+</body>
+</html>
