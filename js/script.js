@@ -1,9 +1,18 @@
-// Animate skill bars
+const feedbackForm = document.getElementById("feedbackForm");
+const visitorName = document.getElementById("visitorName");
+const visitorEmail = document.getElementById("visitorEmail");
+const suggestion = document.getElementById("suggestion");
+
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+const commentError = document.getElementById("commentError");
+
+
+
 document.querySelectorAll('.skill-progress').forEach(bar => {
     bar.style.width = bar.dataset.level + '%';
 });
 
-// Feedback form validation
 feedbackForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -35,5 +44,5 @@ feedbackForm.addEventListener("submit", function (e) {
 });
 
 function toggleMenu() {
-    document.querySelector(".navBar").classList.toggle("show");
+    document.querySelector(".nav-links").classList.toggle("show");
 }
